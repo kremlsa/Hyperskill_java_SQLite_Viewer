@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite_Viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite_Viewer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer.SQLite_Viewer-task.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer.SQLite_Viewer-task.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer.SQLite_Viewer-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer.SQLite_Viewer-task.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer.SQLite_Viewer-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer.SQLite_Viewer-task.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/SQLite_Viewer.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/SQLite_Viewer.util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/SQLite_Viewer.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/SQLite_Viewer.util.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/SQLite_Viewer.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/SQLite_Viewer.util.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite_Viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite_Viewer.iml" group="SQLite_Viewer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer-task.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer-task.iml" group="SQLite_Viewer/SQLite_Viewer-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer-task_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer-task_main.iml" group="SQLite_Viewer/SQLite_Viewer-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer-task_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SQLite Viewer/task/SQLite_Viewer-task_test.iml" group="SQLite_Viewer/SQLite_Viewer-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="SQLite_Viewer/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="SQLite_Viewer/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="SQLite_Viewer/util" />
     </modules>
   </component>
 </project>

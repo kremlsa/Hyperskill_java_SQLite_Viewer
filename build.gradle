@@ -18,7 +18,6 @@ subprojects {
     dependencies {
         testImplementation 'com.github.hyperskill:hs-test:release-SNAPSHOT'
         compile group:'org.xerial', name:'sqlite-jdbc', version:'3.8.11.2'
-        implementation group:'org.xerial', name:'sqlite-jdbc', version:'3.30.1'
     }
 
     configurations.all {

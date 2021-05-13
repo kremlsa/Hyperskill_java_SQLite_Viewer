@@ -247,19 +247,8 @@ files:
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/171/stages/886/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #2
-
-    Wrong number of items of &#39;TablesComboBox&#39; combo box.
-    Expected 2 tables
-    Found 0
-
-    Please find below the output of your program during this failed test.
-
-    ---
-
-    Connection is valid.
-  time: Thu, 13 May 2021 09:22:57 UTC
-record: -1
+  message: Congratulations!
+  time: Thu, 13 May 2021 11:29:52 UTC
+record: 2
