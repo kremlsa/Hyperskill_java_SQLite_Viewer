@@ -1,6 +1,9 @@
 package viewer;
 
 import javax.swing.*;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
+import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,6 +15,10 @@ public class SQLiteViewer extends JFrame {
     JTextArea textArea;
     JButton executeButton;
     DBController dbController;
+    JTable table;
+    TableModel tableModel;
+    JScrollPane sp;
+    String dbName;
 
     public SQLiteViewer() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -65,8 +72,30 @@ public class SQLiteViewer extends JFrame {
         //add button
         executeButton = new JButton("Execute");
         executeButton.setName("ExecuteQueryButton");
+        //add listener for button
+        executeButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                executeButtonClick();
+            }
+        } );
         add(executeButton);
 
+        //add table
+        String[] columns = {"test1" , "test2"};
+        Object[][] data = {{"1" , "2"} , {"3" , "4"}};
+        tableModel = new MyTableModel(data, columns);
+        table = new JTable(tableModel);
+        table.setName("Table");
+        tableModel.addTableModelListener(new CustomListener());
+        sp = new JScrollPane(table);
+        this.add(sp);
+
+    }
+
+    private void executeButtonClick() {
+        tableModel = dbController.executeQuery(dbName, textArea.getText());
+        table.setModel(tableModel);
+        table.repaint();
     }
 
     private void generateQuery() {
@@ -74,11 +103,18 @@ public class SQLiteViewer extends JFrame {
     }
 
     private void openFileButtonClick() {
-        String dbname = nameTextField.getText();
+        dbName = nameTextField.getText();
         dbController = new DBController();
         comboBox.removeAllItems();
-        dbController.setUpDBConnection(dbname)
+        dbController.setUpDBConnection(dbName)
                 .forEach(comboBox::addItem);
     }
 
+}
+
+class CustomListener implements TableModelListener {
+    @Override
+    public void tableChanged(TableModelEvent e) {
+        System.out.println("Table Updated!");
+    }
 }

@@ -370,6 +370,12 @@ files:
         }
     }
   learner_created: true
+- name: src/viewer/MyTableModel.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/171/stages/887/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 14 May 2021 16:41:18 UTC
+record: 3
