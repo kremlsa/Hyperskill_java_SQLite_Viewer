@@ -517,6 +517,15 @@ files:
         }
     }
   learner_created: true
+- name: firstDatabase.db
+  visible: true
+  learner_created: true
+- name: secondDatabase.db
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/171/stages/888/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 16 May 2021 00:58:48 UTC
 record: -1

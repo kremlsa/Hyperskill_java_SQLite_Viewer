@@ -2,6 +2,12 @@ package viewer;
 
 import javax.swing.table.AbstractTableModel;
 
+/**
+ * Class for custom table model
+ *
+ * @author kremlsa@yandex.ru
+ * @version 1.0
+ */
 public class MyTableModel extends AbstractTableModel {
     String[] columns;
     Object[][] data;
@@ -29,11 +35,6 @@ public class MyTableModel extends AbstractTableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         return data[rowIndex][columnIndex];
-    }
-
-    public void setValueAt(Object value, int rowIndex, int columnIndex) {
-        data[rowIndex][columnIndex] = value;
-        fireTableCellUpdated(rowIndex,columnIndex);
     }
 
 }
